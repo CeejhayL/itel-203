@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    body{
+        background-image:linear-gradient(to top right, rgb(17, 16, 16),rgb(49, 102, 145));
+        background-attachment: fixed;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    form{
+        border: 3px solid rgb(245, 248, 248);
+        width: 380px;
+        height: 470px;
+        box-shadow: 5px 5px 5px rgb(64, 197, 238);
+    }
+    h1{
+        font-size: 35pxpx;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color:rgb(207, 247, 33) ;
+        display: flex;
+        justify-content: center;
+    }
+    label{
+        margin-left: 20px;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: bold;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgb(23, 215, 215);
+        text-align: right;
+    }
+    .name{
+        border: 2px solid rgb(244, 236, 236);
+        background-color: transparent;
+        color: aliceblue;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+    .address{
+        border: 2px solid rgb(244, 236, 236);
+        background-color: transparent;
+        color: aliceblue;
+        border-radius: 5px;
+        font-size: 12px;
+        width: 270px;
+    }
+    .number{
+        border: 2px solid rgb(244, 236, 236);
+        background-color: transparent;
+        color: aliceblue;
+        border-radius: 5px;
+        font-size: 15px;
+        width: 150px;
+    }
+    .course{
+        border: 2px solid rgb(244, 236, 236);
+        background-color: transparent;
+        color: aliceblue;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+    .year{
+        border: 2px solid rgb(244, 236, 236);
+        background-color: transparent;
+        color: rgb(9, 12, 14);
+        border-radius: 5px;
+        width:150px;
+        font-size: 15px;
+        background-color: rgb(247, 242, 236);
+    }
+    .checkboxes{
+        border-radius: 10px;;
+        width: 20px;
+        height: 18px;
+    }
+    .register{
+        width: 120px;
+        margin-left: 35%;
+        margin-top: 5px;
+        font-size: 20px;
+        border-radius: 5px;
+        border: 3px solid rgb(6, 94, 113);
+        background-color: rgb(199, 223, 225);
+        font-weight: bolder;
+        font-style: italic;
+    }
+    .calendar{
+        width: 140px;
+        height:20px;
+        border-radius: 5px;
+        font-size: 15px;
+        border: 2px solid;
+    }
+    </style>
+    <body>
+        <form>
+            <h1>Registration Form</h1><br>
+            <label>Full Name</label>
+            <input class="name" type = "text" id = "name" name = "name"/><br><br>
+            <label>Address</label>
+            <input class="address" type="text" name="address" id="address"/><br><br>
+            <label>Phone Number</label>
+            <input class="number" type="text" name="number" id="number"/><br><br>
+            <label>Course</label>
+            <input class="course" type="text" name="course" id="course"/><br><br>
+            <label>Year</label>
+            <select class="year" id="section">
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+            </select><br><br>
+            <label>Male</label>
+            <input class="checkboxes"type="checkbox" id ="gender" name ="gender"/>
+            <label>Female</label>
+            <input class="checkboxes" type="checkbox" id ="female" name ="gender"/><br><br>
+            <label>Birthday</Label>
+            <input class ="calendar" type ="date" id ="date" name="date"><br><br>
+            <button class = "register">Register</button>
+        </form>
+    </body>
+</head>
+</html>
